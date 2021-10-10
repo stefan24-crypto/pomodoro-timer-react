@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  max-width: 400px;
+  z-index: 30;
+  background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+  animation: fade-in-bottom 0.5s forwards;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.timeSelect {
+  display: flex;
+}
+.select {
+  max-width: 100px;
+  padding: 0.3rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  color: #ffbf00;
+  background-color: #161932;
+}
+
+.select[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.submit {
+  padding: 0.3rem 1.3rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+  background-color: #161932;
+  color: white;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #ffbf00;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    top: 60%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}

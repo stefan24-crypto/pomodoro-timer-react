@@ -1,0 +1,40 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 410px;
+  height: 410px;
+  background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+  box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+  border-radius: 50%;
+}
+
+.timer:hover {
+  cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside {
+  position: absolute;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.state {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffbf00;
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: 600;
+  color: aliceblue;
+}

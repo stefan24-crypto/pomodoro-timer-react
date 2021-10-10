@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+:root {
+  --bg: #161932;
+}
+
+.app {
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: aliceblue;
+  user-select: none;
+}
+
+.settings {
+  max-width: 40px;
+  margin-top: 1rem;
+}
+
+.settings:hover {
+  cursor: pointer;
+}
